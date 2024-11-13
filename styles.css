@@ -15,6 +15,7 @@ body {
     height: auto;
     margin: 0;
     font-family: Rajdhani;
+    padding-bottom :60px;
 }
 
 .pricing__title {
@@ -63,7 +64,7 @@ body {
 .pricing__card-details {
     font-family: Josefin Sans !important;
     font-size: 26px;
-    color: #aaa9a9;
+    color: #d3d0d0;
     font-weight: lighter;
     
  
@@ -137,5 +138,56 @@ body {
 .pricing__card--premium .pricing__card-btn {
     background-color: #ffffff;
     color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 834px) {
+    .pricing__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 35px; 
+    }
+
+    .pricing__card {
+        flex: 1 1 45%; 
+        max-width: 325px; 
+    }
+
+    .pricing__card:nth-child(3) {
+        flex-basis: 100%; 
+        display: flex;
+        justify-content: center; 
+    }
+
+
+    .pricing__title {
+        text-align: center;
+        color: #333;
+        font-size: 45px;
+        font-weight: 700;
+        position: relative;
+        margin-top:48px;
+        margin-bottom:30px;
+    
+    }
 }
 
